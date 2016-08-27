@@ -104,3 +104,67 @@
 	#done {
 		height:100%;
 	}
+
+	#schedule {
+		width: 970px;
+		margin: 3em auto 80px;
+	}
+
+	.schedule-item {
+		text-align: center;
+		margin-bottom: 1px;
+	}
+	.schedule-item:hover .time {
+		font-weight: 1000;
+		color:#a3221b
+	}
+	.schedule-item .time {
+		display: inline-block;
+		vertical-align: top;
+		width: 70px;
+		color: #c1c1c1;
+		font-size: 1.25rem;
+		margin-top: 18px;
+		margin-left: -80px;
+		transition: all .2s;
+		background-color: transparent;
+	}
+
+	.schedule-item .lecture {
+		color: #000;
+		text-align: center;
+		padding: 18px;
+		display: inline-block;
+		vertical-align: top;
+		width: 900px;
+		position: relative;
+		margin: 1px;
+		border: 1px solid #e0e0e0;
+		-webkit-transition: all .3s;
+		-moz-transition: all .3s;
+		-o-transition: all .3s;
+		transition: all .3s;	
+		font-size: 1.25rem;
+	}
+
+	#registration {
+		height: 100%;
+		background-color:#a3221b;
+	}
+
+	#registration-header {
+		font-size:6em;
+		margin-top:1em;
+		margin-right:1.5em;
+		color:white;
+	}
+
+	#registration-form {
+		background-color: white;
+		width: 500px;
+		margin: 40px auto 80px;
+		height:200px;
+		-webkit-box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.84);
+		-moz-box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.84);
+		box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.84);
+	}
