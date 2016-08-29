@@ -6,6 +6,7 @@
     </head>
     <script src="3rdParty/jquery-2.1.4.js"></script>
     <script src="main.js"></script>
+    
     <body dir="ltr">
         <div
 		class="parallax-image-wrapper parallax-image-wrapper-100"
@@ -143,6 +144,9 @@
                     <div style="font-size:6em;margin-left:1em;">
                         Location
                     </div>
+                    <div id=map style="width:700px; height:440px; margin:0 auto 0;">
+                        
+                    </div>
                 </div>
             </section>
             <section id="register" class="register">
@@ -173,5 +177,18 @@
         <script type="text/javascript">
         var s = skrollr.init();
     </script>
+    <script>
+      function initMap() {
+        // Create a map object and specify the DOM element for display.
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 32.0852999,lng: 34.78176759999997},
+          scrollwheel: false,
+          zoom: 14
+        });
+      }
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAW3X4MBtOMrXUBowiFdO57LVDkzh59tNY&callback=initMap"
+    async defer></script>
     </body>
 </html>
