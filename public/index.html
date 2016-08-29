@@ -4,94 +4,169 @@
         <title>Mzpn Conference 2016</title>
         <link rel="stylesheet" href="main.css"/>
     </head>
-    <body dir="rtl">
+    <script src="3rdParty/jquery-2.1.4.js"></script>
+    <script src="main.js"></script>
+    <body dir="ltr">
         <div
 		class="parallax-image-wrapper parallax-image-wrapper-100"
-		data-anchor-target="#dragons + .gap"
+		data-anchor-target="#imageTarget + .gap"
 		data-bottom-top="transform:translate3d(0px, 200%, 0px)"
 		data-top-bottom="transform:translate3d(0px, 0%, 0px)">
 
 		<div
 			class="parallax-image parallax-image-100"
 			style="background-image:url(3rdParty/openSource.jpg)"
-			data-anchor-target="#dragons + .gap"
+			data-anchor-target="#imageTarget + .gap"
 			data-bottom-top="transform: translate3d(0px, -80%, 0px);"
 			data-top-bottom="transform: translate3d(0px, 80%, 0px);"
 		></div>
 		<!--the +/-80% translation can be adjusted to control the speed difference of the image-->
 	</div>
+    <div
+		class="parallax-image-wrapper parallax-image-wrapper-50"
+		data-anchor-target="#progImgTarget + .gap"
+		data-bottom-top="transform:translate3d(0px, 300%, 0px)"
+		data-top-bottom="transform:translate3d(0px, 0%, 0px)">
 
+		<div
+			class="parallax-image parallax-image-50"
+			style="background-image:url(3rdParty/programming.jpg)"
+			data-anchor-target="#progImgTarget + .gap"
+			data-bottom-top="transform: translate3d(0px, -60%, 0px);"
+			data-top-bottom="transform: translate3d(0px, 60%, 0px);"
+		></div>
+		<!--the +/-80% translation can be adjusted to control the speed difference of the image-->
+	</div>
         <div id="skrollr-body">
             <div style="background-color:#a3221b;height:100%;color:white;">
-                <div style="display:inline-block; font-size:4em;vertical-align:top;">כנס OpenSource הצה"לי</div>
-                <div style="display:inline-block;float:left;">
+                <!--<div style="display:inline-block; font-size:1em;vertical-align:top;">כנס OpenSource הצה"לי</div>-->
+                <div style="height:45px;">
+                    <header id="top-header">
+                        <nav>
+                            <div class="logo">
+                                Logo
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="/#about">About</a>
+                                </li>
+                                <li>
+                                    <a href="/#speakers">Speakers</a>
+                                </li>
+                                <li>
+                                    <a href="/#scheduleSection">Schedule</a>
+                                </li>
+                                <li>
+                                    <a href="/#location">Location</a>
+                                </li>
+                                <li>
+                                    <a href="/#register">Register</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </header>
+                </div>
+                <!--<div style="display:inline-block;float:left;">
                     <div style="background-image:url(3rdParty/IDF.png); width:80px; height:80px; display:inline-block"></div>
                     <div style="background-image:url(3rdParty/tikshuv.jpg); width:80px; height:80px; display:inline-block"></div>
                     <div style="background-image:url(3rdParty/Lotem.png); width:57px; height:80px; display:inline-block"></div>
                     <div style="background-image:url(3rdParty/mzpn.png); width:65px; height:80px; display:inline-block"></div>
-                </div>
-                <div>
-                    <div style="display:inline-block;width:40%;">
-                        ברוכים הבאים בלה בלה
+                </div>-->
+                <section id="about" class="about">
+                    <div>
+                        <div style="display:inline-block;width:40%;">
+                            Welcome to Mzpn OpenSource Conference! Here comes the description
+                        </div>
+                        <div style="display:inline-block;
+                                    background-image:url(3rdParty/openSourceLogo.jpg); 
+                                    width:610px; 
+                                    height:310px;
+                                    margin-left:10em;"></div>
                     </div>
-                    <div style="display:inline-block;
-                                background-image:url(3rdParty/openSourceLogo.jpg); 
-                                width:610px; 
-                                height:310px;
-                                float:left;
-                                margin-left:10em;" data-0="transform:scale(1) rotate(0deg)"
-                                data-500="transform:scale(0) rotate(1440deg)"></div>
-                </div>
+                </section>
             </div>
-            <div id="dragons">
+            <div id="imageTarget">
             </div>
             <div class="gap gap-100" style="background-image:url(3rdParty/openSource.jpg);"></div>
-            <div style="height:100%;color:#a3221b;">
-                <div id="dasragons" style="font-size:6em;margin-top:1m;margin-right:1.5em;">
-                    מה בתכנון?
-                </div>
-                <div id="schedule">
-                    <div class="schedule-item">
-                        <div class="time">
-                            8:30
-                        </div>
-                        <div class="lecture">
-                            פתיחת דלתות, כניסה, כיבוד קל והיכרות
-                        </div>
-                    </div>
-                    <div class="schedule-item">
-                        <div class="time">
-                            8:30
-                        </div>
-                        <div class="lecture">
-                            פתיחת דלתות, כניסה, כיבוד קל והיכרות
-                        </div>
-                    </div>
-                    <div class="schedule-item">
-                        <div class="time">
-                            8:30
-                        </div>
-                        <div class="lecture">
-                            פתיחת דלתות, כניסה, כיבוד קל והיכרות
-                        </div>
-                    </div>
-                    <div class="schedule-item">
-                        <div class="time">
-                            8:30
-                        </div>
-                        <div class="lecture">
-                            פתיחת דלתות, כניסה, כיבוד קל והיכרות
-                        </div>
+            <section id="speakers" class="speakers">
+                <div style="height:100%;background-color:#a3221b;padding-top: 45px;color:white;">
+                    <div style="font-size:6em;margin-left:1em;">
+                            Speakers
                     </div>
                 </div>
-            </div>
+            </section>
+            <section class="scheduleSection" id="scheduleSection">
+                <div style="height:100%;color:#a3221b;padding-top: 45px;">
+                    <div style="font-size:6em;margin-left:1em;">
+                        Schedule
+                    </div>
+                    <div id="schedule">
+                        <div class="schedule-item">
+                            <div class="time">
+                                8:30
+                            </div>
+                            <div class="lecture">
+                                פתיחת דלתות, כניסה, כיבוד קל והיכרות
+                            </div>
+                        </div>
+                        <div class="schedule-item">
+                            <div class="time">
+                                8:30
+                            </div>
+                            <div class="lecture">
+                                פתיחת דלתות, כניסה, כיבוד קל והיכרות
+                            </div>
+                        </div>
+                        <div class="schedule-item">
+                            <div class="time">
+                                8:30
+                            </div>
+                            <div class="lecture">
+                                פתיחת דלתות, כניסה, כיבוד קל והיכרות
+                            </div>
+                        </div>
+                        <div class="schedule-item">
+                            <div class="time">
+                                8:30
+                            </div>
+                            <div class="lecture">
+                                פתיחת דלתות, כניסה, כיבוד קל והיכרות
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div id="progImgTarget"></div>
+            <div class="gap gap-50" style="background-image=url(3rdParty/programming.jpg)"></div>
+            <section id="location" class="location">
+                <div style="height:100%;padding-top: 45px;color:#a3221b">
+                    <div style="font-size:6em;margin-left:1em;">
+                        Location
+                    </div>
+                </div>
+            </section>
+            <section id="register" class="register">
             <div id="registration">
                 <div id="registration-header">
-                    הרשמה
+                    Register
                 </div>
-                <div id="registration-form">
-                    sdfsd
-                </div>
+                <form id="registration-form" method="POST">
+                    <div>
+                        <label>Name:</label>
+                        <input type="text" id="name" placeholder="Enter your name.."/>
+                    </div>
+                    <div>
+                        <label>Unit:</label>
+                        <input type="text" id="unit" placeholder="Enter your unit's name.."/>
+                    </div>
+                    <div>
+                        <label>Phone Number:</label>
+                        <input type=tel id="phone"/>
+                    </div>
+                    <div>
+                        <input type="submit" value="Sign me Up!"/>
+                    </div>
+                </form>
             </div>
         </div>
         <script type="text/javascript" src="3rdParty/skrollr.min.js"></script>
