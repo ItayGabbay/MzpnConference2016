@@ -104,3 +104,112 @@
 	#done {
 		height:100%;
 	}
+
+	#schedule {
+		width: 970px;
+		margin: 3em auto 80px;
+	}
+
+	.schedule-item {
+		text-align: center;
+		margin-bottom: 1px;
+	}
+	.schedule-item:hover .time {
+		font-weight: 1000;
+		color:#a3221b
+	}
+	.schedule-item .time {
+		display: inline-block;
+		vertical-align: top;
+		width: 70px;
+		color: #c1c1c1;
+		font-size: 1.25rem;
+		margin-top: 18px;
+		margin-left: -80px;
+		transition: all .2s;
+		background-color: transparent;
+	}
+
+	.schedule-item .lecture {
+		color: #000;
+		text-align: center;
+		padding: 18px;
+		display: inline-block;
+		vertical-align: top;
+		width: 900px;
+		position: relative;
+		margin: 1px;
+		border: 1px solid #e0e0e0;
+		-webkit-transition: all .3s;
+		-moz-transition: all .3s;
+		-o-transition: all .3s;
+		transition: all .3s;	
+		font-size: 1.25rem;
+	}
+
+	#registration {
+		height: 100%;
+		background-color:#a3221b;
+		padding-top:45px;
+	}
+
+	#registration-header {
+		font-size:6em;
+		margin-right:1em;
+		color:white;
+	}
+
+	#registration-form {
+		background-color: white;
+		width: 500px;
+		margin: 40px auto 80px;
+		height:200px;
+		-webkit-box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.84);
+		-moz-box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.84);
+		box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.84);
+	}
+
+	nav li a {
+    font-size: 15px;
+    font-weight: 300;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    color: #fff;
+}
+.after-scroll nav li a {
+	color:rgba(0,0,0,0.5)
+}
+
+a {
+    color: #03a9f4;
+    text-decoration: none;
+}
+nav li {
+    display: inline-block;
+    padding: 0 8px;
+    vertical-align: middle;
+}
+nav ul {
+	display:inline-block;
+}
+#top-header {
+    position: fixed;
+    z-index: 500;
+    width: 100%;
+    padding: 0 45px;
+	height:45px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+#top-header.after-scroll {
+    padding-top: 0;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2),0 1px 0 rgba(255,255,255,0.15);
+	background-color:rgba(255,255,255,0.9);
+	color:rgba(0,0,0,0.5);
+}
+.logo{
+	display:inline-block;
+	vertical-align: middle;
+}
