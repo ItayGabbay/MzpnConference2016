@@ -38,10 +38,7 @@
 		></div>
 		<!--the +/-80% translation can be adjusted to control the speed difference of the image-->
 	</div>
-        <div id="skrollr-body">
-            <div style="background-color:#a3221b;height:100%;color:white;">
-                <!--<div style="display:inline-block; font-size:1em;vertical-align:top;">כנס OpenSource הצה"לי</div>-->
-                <div style="height:45px;">
+                    <div style="height:45px;">
                     <header id="top-header">
                         <nav>
                             <div class="logo">
@@ -65,8 +62,11 @@
                                 </li>
                             </ul>
                         </nav>
-                    </header>
+                  </header>
                 </div>
+        <div id="skrollr-body">
+            <div style="background-color:#a3221b;height:100%;color:white;">
+                <!--<div style="display:inline-block; font-size:1em;vertical-align:top;">כנס OpenSource הצה"לי</div>-->
                 <!--<div style="display:inline-block;float:left;">
                     <div style="background-image:url(3rdParty/IDF.png); width:80px; height:80px; display:inline-block"></div>
                     <div style="background-image:url(3rdParty/tikshuv.jpg); width:80px; height:80px; display:inline-block"></div>
@@ -175,7 +175,10 @@
         </div>
         <script type="text/javascript" src="3rdParty/skrollr.min.js"></script>
         <script type="text/javascript">
-        var s = skrollr.init();
+        var s = skrollr.init({
+            forceHeight: false,
+            smoothScrolling: true
+        });
     </script>
     <script>
       function initMap() {
