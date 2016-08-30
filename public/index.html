@@ -1,197 +1,516 @@
-<!DOCTYPE>
-<html>
-    <head>
-        <title>Mzpn Conference 2016</title>
-        <link rel="stylesheet" href="main.css"/>
-    </head>
-    <script src="3rdParty/jquery-2.1.4.js"></script>
-    <script src="main.js"></script>
-    
-    <body dir="ltr">
-        <div
-		class="parallax-image-wrapper parallax-image-wrapper-100"
-		data-anchor-target="#imageTarget + .gap"
-		data-bottom-top="transform:translate3d(0px, 200%, 0px)"
-		data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+<!DOCTYPE html>
+<html lang="en">
 
-		<div
-			class="parallax-image parallax-image-100"
-			style="background-image:url(3rdParty/openSource.jpg)"
-			data-anchor-target="#imageTarget + .gap"
-			data-bottom-top="transform: translate3d(0px, -80%, 0px);"
-			data-top-bottom="transform: translate3d(0px, 80%, 0px);"
-		></div>
-		<!--the +/-80% translation can be adjusted to control the speed difference of the image-->
-	</div>
-    <div
-		class="parallax-image-wrapper parallax-image-wrapper-50"
-		data-anchor-target="#progImgTarget + .gap"
-		data-bottom-top="transform:translate3d(0px, 300%, 0px)"
-		data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="author" content="AngularJS community and 500Tech">
+    <meta name="description" content="Israel's International Angular Conference & Tour">
+    <meta name="keywords" content="event, conference, angular, javascript">
+    <meta name="google-site-verification" content="" />
+    <link rel="canonical" href="http://angular-up.com">
+    <title>Mzpn Conference 2016</title>
+    <link rel="shortcut icon" href="/img/favicons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="152x152" href="/img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="/img/favicons/apple-touch-icon-57x57.png">
+    <link rel="icon" type="image/png" href="/img/favicons/favicon-196x196.png">
+    <link rel="icon" type="image/png" href="/img/favicons/favicon-160x160.png">
+    <link rel="icon" type="image/png" href="/img/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" href="/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" href="/img/favicons/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="msapplication-TileImage" content="/img/favicons/mstile-144x144.png">
+    <meta name="msapplication-config" content="/img/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#2b5797">
+    <link href="main.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
+</head>
 
-		<div
-			class="parallax-image parallax-image-50"
-			style="background-image:url(3rdParty/programming.jpg)"
-			data-anchor-target="#progImgTarget + .gap"
-			data-bottom-top="transform: translate3d(0px, -60%, 0px);"
-			data-top-bottom="transform: translate3d(0px, 60%, 0px);"
-		></div>
-		<!--the +/-80% translation can be adjusted to control the speed difference of the image-->
-	</div>
-                    <div style="height:45px;">
-                    <header id="top-header">
-                        <nav>
-                            <div class="logo">
-                                Logo
-                            </div>
+<body>
+    <div id="st-container" class="st-container">
+        <div class="st-pusher">
+            <div class="st-content">
+                <!-- Begin Hero Section -->
+                <section id="top-section-hero" class="top-section-hero top-section image-section parallax" style="background-image: url('/img/sections-background/hero.jpg');">
+                    <header id="top-header" class="top-header">
+                        <div class="overlay white-solid"></div>
+                        <svg id="menu-trigger" class="menu-trigger icon icon-menu visible-xs" viewBox="0 0 32 32">
+                            <use xlink:href="/3rdParty/sprites.svg#icon-menu"></use>
+                        </svg>
+                        <a href="/" id="logo-header" class="logo-header">
+                            <div class="logo logo-light"></div>
+                        </a>
+                        <nav class="st-menu st-effect" id="menu">
+                            <div class="logo-navbar logo logo-dark visible-xs"></div>
                             <ul>
-                                <li>
-                                    <a href="/#about">About</a>
-                                </li>
-                                <li>
-                                    <a href="/#speakers">Speakers</a>
-                                </li>
-                                <li>
-                                    <a href="/#scheduleSection">Schedule</a>
-                                </li>
-                                <li>
-                                    <a href="/#location">Location</a>
-                                </li>
-                                <li>
-                                    <a href="/#register">Register</a>
-                                </li>
+                                <li> <a class="" href=" /#about ">About</a> </li>
+                                <li> <a class="" href=" /#sessions ">Speakers</a> </li>
+                                <li> <a class="" href=" /#location-map ">Venue</a> </li>
+                                <li> <a class="" href=" /#schedule">Schedule</a> </li>
                             </ul>
+                            <!--<ul id="bottom-navlinks" class="bottom-navlinks visible-xs">
+                                <li> <a href=" /cfp/ ">Become a speaker</a> </li>
+                            </ul>-->
+                            <a href=" /#register" class="right-nav-button btn btn-primary waves-effect waves-button waves-light waves-float pull-right hidden-xs hidden-sm"> Register </a>
                         </nav>
-                  </header>
-                </div>
-        <div id="skrollr-body">
-            <div style="background-color:#a3221b;height:100%;color:white;">
-                <!--<div style="display:inline-block; font-size:1em;vertical-align:top;">כנס OpenSource הצה"לי</div>-->
-                <!--<div style="display:inline-block;float:left;">
-                    <div style="background-image:url(3rdParty/IDF.png); width:80px; height:80px; display:inline-block"></div>
-                    <div style="background-image:url(3rdParty/tikshuv.jpg); width:80px; height:80px; display:inline-block"></div>
-                    <div style="background-image:url(3rdParty/Lotem.png); width:57px; height:80px; display:inline-block"></div>
-                    <div style="background-image:url(3rdParty/mzpn.png); width:65px; height:80px; display:inline-block"></div>
-                </div>-->
-                <section id="about" class="about">
-                    <div>
-                        <div style="display:inline-block;width:40%;">
-                            Welcome to Mzpn OpenSource Conference! Here comes the description
+                    </header>
+                    <div class="content-wrapper">
+                        <div class="jumbotron">
+                            <div class="animated hiding" data-animation="fadeInDown" data-delay="500">
+                                <div class="logo logo-big"></div>
+                                <p style="font-weight:bold">Mzpn's #1 Open Source Conference</p>
+                                <!--<br> <a href=" /cfp/ " class="btn btn-primary waves-effect waves-button waves-light waves-float">Become a speaker</a>-->
+                                 <a href=" /#register" class="btn btn-primary waves-effect waves-button waves-light waves-float">Register</a>                                <br> <br>
+                                <p style="font-weight:bold">Tel Aviv, 25 September 2016</p>
+                            </div>
                         </div>
-                        <div style="display:inline-block;
-                                    background-image:url(3rdParty/openSourceLogo.jpg); 
-                                    width:610px; 
-                                    height:310px;
-                                    margin-left:10em;"></div>
+                        <a href="#about" class="explore">
+                            <svg class="icon icon-arrow-down" viewBox="0 0 32 32">
+                                <use xlink:href="/3rdParty/sprites.svg#icon-arrow-down"></use>
+                            </svg>
+                        </a>
                     </div>
                 </section>
-            </div>
-            <div id="imageTarget">
-            </div>
-            <div class="gap gap-100" style="background-image:url(3rdParty/openSource.jpg);"></div>
-            <section id="speakers" class="speakers">
-                <div style="height:100%;background-color:#a3221b;padding-top: 45px;color:white;">
-                    <div style="font-size:6em;margin-left:1em;">
-                            Speakers
-                    </div>
-                </div>
-            </section>
-            <section class="scheduleSection" id="scheduleSection">
-                <div style="height:100%;color:#a3221b;padding-top: 45px;">
-                    <div style="font-size:6em;margin-left:1em;">
-                        Schedule
-                    </div>
-                    <div id="schedule">
-                        <div class="schedule-item">
-                            <div class="time">
-                                8:30
-                            </div>
-                            <div class="lecture">
-                                פתיחת דלתות, כניסה, כיבוד קל והיכרות
-                            </div>
-                        </div>
-                        <div class="schedule-item">
-                            <div class="time">
-                                8:30
-                            </div>
-                            <div class="lecture">
-                                פתיחת דלתות, כניסה, כיבוד קל והיכרות
-                            </div>
-                        </div>
-                        <div class="schedule-item">
-                            <div class="time">
-                                8:30
-                            </div>
-                            <div class="lecture">
-                                פתיחת דלתות, כניסה, כיבוד קל והיכרות
-                            </div>
-                        </div>
-                        <div class="schedule-item">
-                            <div class="time">
-                                8:30
-                            </div>
-                            <div class="lecture">
-                                פתיחת דלתות, כניסה, כיבוד קל והיכרות
+                <!-- End Hero Section -->
+                <!-- About Section -->
+                <section id="about" class="about">
+                    <div class="content-wrapper">
+                        <div class="col-lg-10 col-lg-offset-1">
+                            <h3>About AngularUP</h3>
+                            <div class="row about-details">
+                                <div class="col-md-2 col-sm-3 col-xs-6"></div>
+                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                    <h5>Speakers</h5>
+                                    <img class="img-circle" src="/img/about-section/conference.jpg" height="128" width="128" alt="Speakers">
+                                    <p>Hear top speakers from around the world. Learn about the present and future of Angular
+                                        2 and its ecosystem, TypeScript, tools and much more</p>
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                    <h5>Venue</h5>
+                                    <img class="img-circle" src="/img/about-section/venue.jpg" height="128" width="128" alt="Venue">
+                                    <p>Join us at the beautiful convention area of Dan Panorama hotel, located on the beach.
+                                        Enjoy full lunch and refreshments throughout the event</p>
+                                </div>
+                                <div class="clearfix visible-xs"></div>
+                                <div class="col-md-2 col-sm-3 col-xs-6"></div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-            <div id="progImgTarget"></div>
-            <div class="gap gap-50" style="background-image=url(3rdParty/programming.jpg)"></div>
-            <section id="location" class="location">
-                <div style="height:100%;padding-top: 45px;color:#a3221b">
-                    <div style="font-size:6em;margin-left:1em;">
-                        Location
+                </section>
+                <!-- End About Section -->
+                <!-- Begin Statistic Section -->
+                <section id="statistic" class="statistic image-section parallax" style="background-image: url(/img/sections-background/statistic.jpg);">
+                    <div class="overlay solid-overlay"></div>
+                    <div class="content-wrapper">
+                        <div class="col-lg-10 col-lg-offset-1">
+                            <div class="col-md-3 col-xs-6">
+                                <div class="counter animated hiding" data-animation="fadeInDown" data-delay="0">
+                                    <div class="stat"><span class="timer" data-from="0" data-to="450">450</span>+</div>
+                                    <div class="stat-info">developers</div>
+                                    <hr>
+                                    <p class="small"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-xs-6">
+                                <div class="counter animated hiding" data-animation="fadeInDown" data-delay="500">
+                                    <div class="stat"><span class="timer" data-from="0" data-to="14">14</span>+</div>
+                                    <div class="stat-info">speakers</div>
+                                    <hr>
+                                    <p class="small"></p>
+                                </div>
+                            </div>
+                            <div class="clearfix visible-xs"></div>
+                            <div class="col-md-3 col-xs-6">
+                                <div class="counter animated hiding" data-animation="fadeInDown" data-delay="1000">
+                                    <div class="stat"><span class="timer" data-from="0" data-to="1">1</span></div>
+                                    <div class="stat-info">day</div>
+                                    <hr>
+                                    <p class="small"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-xs-6">
+                                <div class="counter animated hiding" data-animation="fadeInDown" data-delay="1500">
+                                    <div class="stat"><span class="timer" data-from="0" data-to="2">2</span></div>
+                                    <div class="stat-info">parallel tracks</div>
+                                    <hr>
+                                    <p class="small"></p>
+                                </div>
+                            </div>
+                            <div class="clearfix visible-xs"></div>
+                        </div>
                     </div>
-                    <div id=map style="width:700px; height:440px; margin:0 auto 0;">
-                        
+                </section>
+                <!-- End Statistic Section -->
+                <section id="sessions" class="schedule">
+                    <div class="content-wrapper">
+                        <div class="schedule-table col-lg-6 col-lg-offset-3">
+                            <h3>Featured talks</h3>
+                            <div class="timeslot" itemtype="http://schema.org/subEvent">
+                                <div class="flexbox-wrapper">
+                                    <div id="session-2" class="slot col-md-12 col-xs-12 flexbox-item-height" data-slot-detail="Android" data-toggle="modal" data-target="#sessionDetail-1">
+                                        <div class="color-line" style="background: #90be4e"></div>
+                                        <div class="slot-content" style="border-right-color: #90be4e">
+                                            <ul class="slot-speakers">
+                                                <li itemprop="performer">
+                                                    <div class="speaker-img flow-img img-circle" style="background-image: url(/img/people/ben.jpg)"></div>
+                                                    <p class="speaker-name"> Ben Lesh <span class="speaker-position">RxJS 5 Lead, Senior Software Engineer @ Netflix </span>                                                        </p>
+                                                </li>
+                                            </ul>
+                                            <h5 class="slot-title" itemprop="name">Managing Async With RxJS 5</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeslot" itemtype="http://schema.org/subEvent">
+                                <div class="flexbox-wrapper">
+                                    <div id="session-2" class="slot col-md-12 col-xs-12 flexbox-item-height" data-slot-detail="Android" data-toggle="modal" data-target="#sessionDetail-2">
+                                        <div class="color-line" style="background: #90be4e"></div>
+                                        <div class="slot-content" style="border-right-color: #90be4e">
+                                            <ul class="slot-speakers">
+                                                <li itemprop="performer">
+                                                    <div class="speaker-img flow-img img-circle" style="background-image: url(/img/people/daniel.jpg)"></div>
+                                                    <p class="speaker-name"> Daniel Rosenwasser <span class="speaker-position">Program Manager on TypeScript at Microsoft</span>                                                        </p>
+                                                </li>
+                                            </ul>
+                                            <h5 class="slot-title" itemprop="name">TypeScript 2.1 + Angular: Better Together</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeslot" itemtype="http://schema.org/subEvent">
+                                <div class="flexbox-wrapper">
+                                    <div id="session-2" class="slot col-md-12 col-xs-12 flexbox-item-height" data-slot-detail="Android" data-toggle="modal" data-target="#sessionDetail-3">
+                                        <div class="color-line" style="background: #90be4e"></div>
+                                        <div class="slot-content" style="border-right-color: #90be4e">
+                                            <ul class="slot-speakers">
+                                                <li itemprop="performer">
+                                                    <div class="speaker-img flow-img img-circle" style="background-image: url(/img/people/sebastian.png)"></div>
+                                                    <p class="speaker-name"> Sebastian Witalec <span class="speaker-position">Technical Evangelist at Telerik</span>                                                        </p>
+                                                </li>
+                                            </ul>
+                                            <h5 class="slot-title" itemprop="name">Building mobile apps with Angular2 and NativeScript</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeslot" itemtype="http://schema.org/subEvent">
+                                <div class="flexbox-wrapper">
+                                    <div id="session-2" class="slot col-md-12 col-xs-12 flexbox-item-height" data-slot-detail="Android" data-toggle="modal" data-target="#sessionDetail-4">
+                                        <div class="color-line" style="background: #90be4e"></div>
+                                        <div class="slot-content" style="border-right-color: #90be4e">
+                                            <ul class="slot-speakers">
+                                                <li itemprop="performer">
+                                                    <div class="speaker-img flow-img img-circle" style="background-image: url(/img/people/tero.jpg)"></div>
+                                                    <p class="speaker-name"> Tero Parviainen <span class="speaker-position">Developer, writer and docs contributor</span>                                                        </p>
+                                                </li>
+                                            </ul>
+                                            <h5 class="slot-title" itemprop="name">Reactive Music Apps in Angular and RxJS</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeslot" itemtype="http://schema.org/subEvent">
+                                <div class="flexbox-wrapper">
+                                    <div id="session-2" class="slot col-md-12 col-xs-12 flexbox-item-height" data-slot-detail="Android" data-toggle="modal" data-target="#sessionDetail-5">
+                                        <div class="color-line" style="background: #90be4e"></div>
+                                        <div class="slot-content" style="border-right-color: #90be4e">
+                                            <ul class="slot-speakers">
+                                                <li itemprop="performer">
+                                                    <div class="speaker-img flow-img img-circle" style="background-image: url(/img/people/nir.jpg)"></div>
+                                                    <p class="speaker-name"> Nir Kaufman <span class="speaker-position">Head of Angular Development at 500Tech</span>                                                        </p>
+                                                </li>
+                                            </ul>
+                                            <h5 class="slot-title" itemprop="name">Across the universe - Server side rendering with angular universal</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeslot" itemtype="http://schema.org/subEvent">
+                                <div class="flexbox-wrapper">
+                                    <div id="session-2" class="slot col-md-12 col-xs-12 flexbox-item-height" data-slot-detail="Android" data-toggle="modal" data-target="#sessionDetail-6">
+                                        <div class="color-line" style="background: #90be4e"></div>
+                                        <div class="slot-content" style="border-right-color: #90be4e">
+                                            <ul class="slot-speakers">
+                                                <li itemprop="performer">
+                                                    <div class="speaker-img flow-img img-circle" style="background-image: url(/img/people/eyal.jpg)"></div>
+                                                    <p class="speaker-name"> Eyal Vardi <span class="speaker-position">AngularJS guru, works with the leading industry companies in Israel</span>                                                        </p>
+                                                </li>
+                                            </ul>
+                                            <h5 class="slot-title" itemprop="name">Angular 2 Change Detection and Performance Optimization</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeslot" itemtype="http://schema.org/subEvent">
+                                <div class="flexbox-wrapper">
+                                    <div id="session-2" class="slot col-md-12 col-xs-12 flexbox-item-height" data-slot-detail="Android" data-toggle="modal" data-target="#sessionDetail-7">
+                                        <div class="color-line" style="background: #90be4e"></div>
+                                        <div class="slot-content" style="border-right-color: #90be4e">
+                                            <ul class="slot-speakers">
+                                                <li itemprop="performer">
+                                                    <div class="speaker-img flow-img img-circle" style="background-image: url(/img/people/uri.jpg)"></div>
+                                                    <p class="speaker-name"> Uri Shaked <span class="speaker-position">Web Technologies Google Developer Expert, Senior Software Engineer at Blackberry</span>                                                        </p>
+                                                </li>
+                                            </ul>
+                                            <h5 class="slot-title" itemprop="name">Getting Physical with Web Bluetooth</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--<div class="col-lg-6 col-lg-offset-3">
+                            <h4>The full schedule</h4>
+                            <p>We are constantly reviewing talk proposals from the community and adding them to the agenda.</p>
+                            <p>The full schedule will be published once CFP is closed (17.9.2016)</p>
+                            <a href="/cfp/" class="btn btn-primary waves-effect waves-button waves-light waves-float" target="_blank"> Become a speaker </a>
+                        </div>-->
                     </div>
-                </div>
-            </section>
-            <section id="register" class="register">
-            <div id="registration">
-                <div id="registration-header">
-                    Register
-                </div>
-                <form id="registration-form" method="POST">
-                    <div>
-                        <label>Name:</label>
-                        <input type="text" id="name" placeholder="Enter your name.."/>
+                </section>
+                <!-- Begin Twitter Feed Section -->
+                <section id="twitter-feed" class="twitter-feed image-section parallax" style="background-image: url(/img/sections-background/twitter-feed.jpg);">
+                    <div class="overlay solid-overlay"></div>
+                    <div class="content-wrapper">
+                        <div class="col-md-8 col-md-offset-2">
+                            <h3>Want updates?</h3>
+                            <h3>
+                                <a href="https://twitter.com/angularup" target="_blank">
+                                    <span class="up-to-date-link">
+                                 <svg class="icon" viewBox="0 0 30 32">
+                                    <use xlink:href="/3rdParty/sprites.svg#icon-twitter"></use>
+                                 </svg>
+                              </span> @angularup
+                                </a>
+                            </h3>
+                            <h3>
+                                <a href="https://www.facebook.com/events/1191590164219326/" target="_blank">
+                                    <span class="up-to-date-link up-to-date-link-facebook">
+                                 <svg class="icon" viewBox="0 0 30 32">
+                                    <use xlink:href="/3rdParty/sprites.svg#icon-facebook"></use>
+                                 </svg>
+                              </span> angularup
+                                </a>
+                            </h3>
+                            <div id="tweets" class="tweets"></div>
+                        </div>
                     </div>
-                    <div>
-                        <label>Unit:</label>
-                        <input type="text" id="unit" placeholder="Enter your unit's name.."/>
+                </section>
+                <!-- End Twitter Feed Section -->
+                <!-- Begin Location Section -->
+                <section id="location-map" class="location-map">
+                    <div id="canvas-map" class="canvas-map"></div>
+                    <div class="content-wrapper">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-md-offset-1 location-description text-left">
+                            <div class="row">
+                                <div class="pull-left">
+                                    <h3>Location</h3>
+                                    <ul>
+                                        <li>Dan Panorama Convention Center</li>
+                                        <li>10 Prof. Yehezkel Kaufmann Street, Tel Aviv-Yafo</li>
+                                        <!--<li><a href="mailto:info@angular-up.com">info@angular-up.com</a></li>-->
+                                        <li>
+                                            <time>08:30</time> -
+                                            <time>18:00</time>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- <a href="/logistics/#find-way" class="pull-right"> -->
+                                <a class="pull-right">
+                                    <svg class="icon icon-direction" viewBox="0 0 32 32">
+                                        <use xlink:href="/3rdParty/sprites.svg#icon-direction"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <label>Phone Number:</label>
-                        <input type=tel id="phone"/>
+                </section>
+                <!-- End Location Section -->
+                <!-- Begin Schedule Section -->
+                <section id="schedule" class="schedule">
+                    <div class="content-wrapper">
+                        <div class="col-lg-10 col-lg-offset-1">
+                            <h3>Full Schedule</h3>
+                            <div class="schedule-table col-lg-7 col-lg-offset-3">
+                                <div class="row schedule-row">
+                                    <div class="time col-lg-1">8:30</div>
+                                    <div class="schedule-slot col-lg-10">Doors open, registration</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <input type="submit" value="Sign me Up!"/>
+                </section>
+                <!-- End Schedule Section -->
+                <!-- Begin Subscribe Section -->
+                <section id="subscribe" class="subscribe image-section parallax" style="background-image: url(/img/sections-background/subscribe.jpg);">
+                    <div class="overlay solid-overlay"></div>
+                    <div class="content-wrapper">
+                        <div class="col-lg-8 col-lg-offset-2 animated hiding" data-animation="fadeInUp" data-delay="0">
+                            <h3>You can write here a beautiful message</h3>
+                            <h5> And another beautiful message </h5>
+                        </div>
                     </div>
-                </form>
+                </section>
+                <!-- End Subscribe Section -->
+                <!-- Begin Tickets 2 Section -->
+                <section id="register" class="tickets-2">
+                    <div class="content-wrapper">
+                        <div class="col-lg-8 col-md-10 col-lg-offset-2 col-md-offset-1">
+                            <h3>Register</h3>
+                            <div class="tickets-table row">
+                                <div class="tickets-row soldout-price">
+                                    <div class="row">
+                                        <div class="col-sm-6 col-xs-12">
+                                            <p class="title">Early Bird</p>
+                                            <span class="ticket-additional-info">Sold Out</span>
+                                        </div>
+                                        <div class="col-sm-3 col-xs-12">
+                                            <p class="price">350 ILS</p>
+                                            <p class="sub-price">(about 82 EUR)</p>
+                                        </div>
+                                        <div class="col-sm-3 col-xs-12">
+                                            <p class="ticket-sold-out">Sold out</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tickets-row ">
+                                    <div class="row">
+                                        <div class="col-sm-6 col-xs-12">
+                                            <p class="title">Soldiers / Students</p>
+                                            <span class="ticket-additional-info">Send us your soldier / student ID for a discount code</span>
+                                        </div>
+                                        <div class="col-sm-3 col-xs-12">
+                                            <p class="price">300 / 480 ILS</p>
+                                        </div>
+                                        <div class="col-sm-3 col-xs-12"> <span class="bordered dark-border button"> <a href="mailto:tickets@angular-up.com" class="waves-effect waves-button" target="_blank">Get Code</a> </span>                                            </div>
+                                    </div>
+                                </div>
+                                <div class="tickets-row ">
+                                    <div class="row">
+                                        <div class="col-sm-6 col-xs-12">
+                                            <p class="title">Standard Ticket</p>
+                                            <span class="ticket-additional-info">For companies & individuals. Sale ends on 15/9/2016</span>
+                                        </div>
+                                        <div class="col-sm-3 col-xs-12">
+                                            <p class="price">560 ILS</p>
+                                            <p class="sub-price">(about 130 EUR)</p>
+                                        </div>
+                                        <div class="col-sm-3 col-xs-12"> <span class="bordered dark-border button"> <a href="https://www.eventbrite.com/e/angular-up-2016-tickets-26302186548" class="waves-effect waves-button" target="_blank">Buy Now</a> </span>                                            </div>
+                                    </div>
+                                </div>
+                                <div class="tickets-row ">
+                                    <div class="row">
+                                        <div class="col-sm-6 col-xs-12">
+                                            <p class="title">Late Bird</p>
+                                            <span class="ticket-additional-info">For companies & individuals. Sale ends on 31/10/2016</span>
+                                        </div>
+                                        <div class="col-sm-3 col-xs-12">
+                                            <p class="price">660 ILS</p>
+                                            <p class="sub-price">(about 155 EUR)</p>
+                                        </div>
+                                        <div class="col-sm-3 col-xs-12">
+                                            <p class="ticket-fallback"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tickets-row ">
+                                    <div class="row">
+                                        <div class="col-sm-6 col-xs-12">
+                                            <p class="title">Sleepy bird</p>
+                                            <span class="ticket-additional-info"></span>
+                                        </div>
+                                        <div class="col-sm-3 col-xs-12">
+                                            <p class="price">800 ILS</p>
+                                            <p class="sub-price">(about 187 EUR)</p>
+                                        </div>
+                                        <div class="col-sm-3 col-xs-12">
+                                            <p class="ticket-fallback"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="tickets-info">Tickets grant access to all conference sections, coffee breaks and lunch. Accommodation is NOT included in the ticket price.</span>
+                        </div>
+                    </div>
+                </section>
+                <!-- End Tickets 2 Section -->
+                <!-- Begin Footer -->
+                <footer id="footer" class="footer">
+                    <div class="row">
+                        <div class="pull-left col-md-6 col-xs-6">
+                            <div class="g-plusone" data-size="medium" data-annotation="inline" data-width="300" data-href="http://angular-up.com"></div>
+                        </div>
+                        <div class="logo logo-footer logo-gray pull-right"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-xs-6">
+                            <h5>Links</h5>
+                            <ul>
+                                <li><a href=" https://meetup.com/angularjs-il " target="_blank">AngularJS-IL</a></li>
+                                <li><a href=" http://500tech.com " target="_blank">500Tech</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 col-xs-6">
+                            <h5>Contacts</h5>
+                            <ul>
+                                <li><a href=" mailto:info@angular-up.com " target="_blank">info@angular-up.com</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 col-xs-6">
+                            <h5>FAQ</h5>
+                            <ul>
+                                <li><a href=" /cod/ ">Code of Conduct</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-xs-12">
+                            <ul class="social-links">
+                                <li>
+                                    <a href=" https://twitter.com/intent/user?screen_name=angularup " target="_blank">
+                                        <svg class="icon icon-twitter" viewBox="0 0 30 32">
+                                            <use xlink:href="/3rdParty/sprites.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href=" https://facebook.com/angularup " target="_blank">
+                                        <svg class="icon icon-facebook" viewBox="0 0 30 32">
+                                            <use xlink:href="/3rdParty/sprites.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href=" /feed.xml " target="_blank">
+                                        <svg class="icon icon-rss" viewBox="0 0 30 32">
+                                            <use xlink:href="/3rdParty/sprites.svg#icon-rss"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </footer>
+                <!-- End Footer -->
             </div>
         </div>
-        <script type="text/javascript" src="3rdParty/skrollr.min.js"></script>
-        <script type="text/javascript">
-        var s = skrollr.init({
-            forceHeight: false,
-            smoothScrolling: true
-        });
-    </script>
-    <script>
-      function initMap() {
-        // Create a map object and specify the DOM element for display.
-        var map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 32.0852999,lng: 34.78176759999997},
-          scrollwheel: false,
-          zoom: 14
-        });
-      }
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
+    </script> <script> window.jQuery || document.write('<script src="/js/jquery-2.1.1.min.js><\/script>') </script>    
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> 
+    <script> if (typeof($.fn.modal) === 'undefined') { document.write('<script src="/js/bootstrap.min.js><\/script>') } </script>   
+     <script src="/js/default.js"></script> 
+     <script> if ($(window).width() > 767) { document.write('<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAW3X4MBtOMrXUBowiFdO57LVDkzh59tNY&v=3.exp&sensor=false"><\/script>') } </script>
+     <script> Waves.displayEffect(); if ($(window).width() > 767) { var googleMaps = 'index', eventPlace = new google.maps.LatLng(32.0649487,34.7623849), centerMap = new google.maps.LatLng(32.0649487,34.7623849), mobileCenterMap = new google.maps.LatLng(32.0649487,34.7623849), icon = '/img/other/map-marker.svg'; } else { var staticGoogleMaps = true, eventPlaceCoordinates = '32.0649487,34.7623849', centerMapCoordinates = '32.0649487,34.7623849', mobileCenterMapCoordinates = '32.0649487,34.7623849', icon = 'http://angular-up.com/img/other/map-marker.png'; } var twitterFeedUrl = ''; $(document).ready(function () { $(function () { if ($(window).width() > 767) { $("#typeout-text").typed({ strings: [], typeSpeed: 150, backDelay: 900, loop: true }); } }); var rockstarSpeakers = [ {name: "Sebastian Witalec", title: "Technical Evangelist at Telerik", image: "/img/people/sebastian.png"}, {name: "Daniel Rosenwasser", title: "Program Manager on TypeScript", image: "/img/people/daniel.jpg"}, {name: "Tero Parviainen", title: "Developer, writer and docs contributor", image: "/img/people/tero.jpg"}, {name: "Ben Lesh", title: "RxJS 5 Lead", image: "/img/people/ben.jpg"}, {name: "Nir Kaufman", title: "Head of Angular Development at 500Tech", image: "/img/people/nir.jpg"}, {name: "Eyal Vardi", title: "AngularJS guru, works with the leading industry companies in Israel", image: "/img/people/eyal.jpg"}, {name: "Uri Shaked", title: "Web Technologies Google Developer Expert, Senior Software Engineer at Blackberry", image: "/img/people/uri.jpg"} ]; if(rockstarSpeakers.length > 0) { var animationDelay = 1500, count = Math.min(4, rockstarSpeakers.length), colWidth = 12/count; for(i=0; i<count; i++) { var clearfix = '<div class="clearfix visible-xs"></div>'; if ((i)%2 != 0) { clearfix = "" } colXs = (i === count - 1 && count % 2 == 1) && ' col-xs-12 ' || ' col-xs-6 '; $('#rockstar-speaker-title').after('<div class="col-md-'+ colWidth + ' col-md-'+ colWidth + colXs + 'rockstar-speakers-item animated hiding" data-animation="fadeInUp" data-delay="' + animationDelay +'"><div class="rockstar-speaker"><div class="flow-img img-circle rockstar-speaker-img" style="background-image: url(' + rockstarSpeakers[i].image + ')"></div><div class="name">' + rockstarSpeakers[i].name + '</div><div class="sub">' + rockstarSpeakers[i].title + '</div></div></div>' + clearfix); animationDelay -= 500; } } }); </script>
+         <script src="/js/scripts.js"></script>
+          <script type="application/ld+json"> [{ "@context" : "http://schema.org", "@type" : "Event", "name" : "AngularUP 2016", "description": "Israel's International Angular Conference & Tour", "image" : "http://angular-up.com/img/seo/sharing.png", "url" : "http://angular-up.com", "startDate" : "2016-11-17T08:30", "doorTime" : "08:30", "endDate" : "2016-11-17T18:00", "location" : { "@type" : "Place", "name" : "Dan Panorama Convention Center", "sameAs" : "", "address" : { "@type" : "PostalAddress", "streetAddress" : "10 Prof. Yehezkel Kaufmann Street", "addressLocality" : "Tel Aviv-Yafo", "addressRegion" : "", "postalCode" : "", "addressCountry" : "Israel" }, "geo" : { "@type" : "GeoCoordinates", "latitude" : "32.0649487", "longitude" : "34.7623849" } }, // Not supported yet // "organizer" : { // "@type" : "Organization", // "name" : "", // "alternateName" : "", // "description" : "", // "logo" : "http://angular-up.com", // "email" : "", // "sameAs" : "" // }, "subEvent" : { "@type" : "Event", "name" : "Hackathon", "description": "The front doors will be locked because this is after hours, please park behind the building and come to the door nearest the parking lot.<br><br>Our last meeting showed that there was a lot of interest in Android Wear so we decided to put on an Android Wear Hackathon to see what you could come up with! We realize that this is pretty short notice so we hope you can help us spread the word! There will be pizza, prizes and a great group of geeks to spend the evening coding with! Even if you don't have an app idea come on in and lend a hand to someone else or maybe find inspiration once you're here!", "image" : "http://angular-up.com/img/seo/sharing.png", "url" : "http://angular-up.com/hackathon/", "startDate" : "2014-10-24T10:00", "doorTime" : "09:00", "endDate" : "2014-10-25T00:00", "location" : { "@type" : "Place", "name" : "Communa", "sameAs" : "http://communa.net.ua/", "address" : { "@type" : "PostalAddress", "streetAddress" : "1 Halytska St", "addressLocality" : "Lviv", "addressRegion" : "Lvivska", "postalCode" : "79000", "addressCountry" : "Ukraine" }, "geo" : { "@type" : "GeoCoordinates", "latitude" : "49.840999", "longitude" : " 24.031144" } } }, "offers" : [ { "@type" : "Offer", "name" : "Early Bird", "url" : "https://www.eventbrite.com/e/angular-up-2016-tickets-26302186548", "price" : "350", "priceCurrency" : "ILS", "validFrom" : "", "validThrough" : "" }, { "@type" : "Offer", "name" : "Soldiers / Students", "url" : "mailto:tickets@angular-up.com", "price" : "300 / 480", "priceCurrency" : "ILS", "validFrom" : "", "validThrough" : "" }, { "@type" : "Offer", "name" : "Standard Ticket", "url" : "https://www.eventbrite.com/e/angular-up-2016-tickets-26302186548", "price" : "560", "priceCurrency" : "ILS", "validFrom" : "", "validThrough" : "" }, { "@type" : "Offer", "name" : "Late Bird", "url" : "https://www.eventbrite.com/e/angular-up-2016-tickets-26302186548", "price" : "660", "priceCurrency" : "ILS", "validFrom" : "", "validThrough" : "" }, { "@type" : "Offer", "name" : "Sleepy bird", "url" : "https://www.eventbrite.com/e/angular-up-2016-tickets-26302186548", "price" : "800", "priceCurrency" : "ILS", "validFrom" : "", "validThrough" : "" } ], "performer" : [ { "@type" : "Person", "name" : "Sebastian Witalec", "image" : "http://angular-up.com/img/people/sebastian.png", "jobTitle" : "Technical Evangelist at Telerik", "worksFor" : { "@type" : "Organization", "name" : "Telerik" }, "sameAs" : "https://github.com/sebawita" }, { "@type" : "Person", "name" : "Daniel Rosenwasser", "image" : "http://angular-up.com/img/people/daniel.jpg", "jobTitle" : "Program Manager on TypeScript", "worksFor" : { "@type" : "Organization", "name" : "Microsoft" }, "sameAs" : "https://twitter.com/drosenwasser" }, { "@type" : "Person", "name" : "Tero Parviainen", "image" : "http://angular-up.com/img/people/tero.jpg", "jobTitle" : "Developer, writer and docs contributor", "worksFor" : { "@type" : "Organization", "name" : "Independent Contractor" }, "sameAs" : "https://twitter.com/teropa" }, { "@type" : "Person", "name" : "Ben Lesh", "image" : "http://angular-up.com/img/people/ben.jpg", "jobTitle" : "RxJS 5 Lead", "worksFor" : { "@type" : "Organization", "name" : "Netflix" }, "sameAs" : "https://twitter.com/BenLesh" }, { "@type" : "Person", "name" : "Nir Kaufman", "image" : "http://angular-up.com/img/people/nir.jpg", "jobTitle" : "Head of Angular Development at 500Tech", "worksFor" : { "@type" : "Organization", "name" : "500Tech" }, "sameAs" : "https://twitter.com/nirkaufman" }, { "@type" : "Person", "name" : "Eyal Vardi", "image" : "http://angular-up.com/img/people/eyal.jpg", "jobTitle" : "AngularJS guru, works with the leading industry companies in Israel", "worksFor" : { "@type" : "Organization", "name" : "" }, "sameAs" : "https://twitter.com/eVardi" }, { "@type" : "Person", "name" : "Uri Shaked", "image" : "http://angular-up.com/img/people/uri.jpg", "jobTitle" : "Web Technologies Google Developer Expert, Senior Software Engineer at Blackberry", "worksFor" : { "@type" : "Organization", "name" : "Blackberry" }, "sameAs" : "https://twitter.com/UriShaked" } ], "eventStatus" : "EventScheduled", "typicalAgeRange" : "16+" }] </script>
+</body>
 
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAW3X4MBtOMrXUBowiFdO57LVDkzh59tNY&callback=initMap"
-    async defer></script>
-    </body>
 </html>
