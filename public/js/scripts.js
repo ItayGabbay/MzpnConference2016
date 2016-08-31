@@ -21,6 +21,28 @@
             $('#logo-header .logo').removeClass('logo-light').addClass('logo-dark');
         }
 
+        $('#registerForm').submit(function() {
+            var url = "/signup";
+
+            $.ajax({
+                type: "POST",
+                url: url,
+                // serialize your form's elements.
+                data: $("#registerForm").serialize(), 
+                success: function(data)
+                {
+                    if (data == "OK") {
+                        $("#registerForm").parent().html('<div class="alert alert-success" role="alert"><strong>Success!</strong> You succefully signed up for the event</div>')
+                    }
+                    else {
+                        $("#registerForm").parent().html('<div class="alert alert-danger" role="alert"><strong>Failure!</strong>Unfortunately, The registration failed. Contact administrator</div>')                        
+                    }
+                }
+                });
+            // avoid to execute the actual submit of the form.
+            return false;
+        });
+
         $(window).scroll(function() {
             var scroll = $(this).scrollTop();
             var header = $('#top-header');

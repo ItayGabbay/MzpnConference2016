@@ -401,13 +401,12 @@ p {
 .time {
 	display: inline-block;
     vertical-align: top;
-    width: 70px;
     color: #c1c1c1;
     font-size: 1.25rem;
     margin-top: 18px;
-    margin-left: -80px;
     transition: all .2s;
     background-color: transparent;
+    min-height:1px;
 }
 .schedule-slot {
 	color: #000;
@@ -422,6 +421,8 @@ p {
     -o-transition: all .3s;
     transition: all .3s;
 	border-radius: 3px;
+    min-height: 1px;
+    width:70%;
 }
 small,
 .small {
