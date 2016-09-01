@@ -5,7 +5,7 @@ var bodyParser = require('body-parser')
 
 app.use(express.static(__dirname + '/public'));
 
-app.listen(3000, function() {
+app.listen(4444, function() {
   console.log('listening');
 });
 

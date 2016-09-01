@@ -2879,7 +2879,7 @@ time {
     background-image: url("../img/sprites/angularup-dark.png")
 }
 .logo.logo-big {
-    background-image: url("../img/sprites/angularup-big.png")
+    background-image: url("/3rdParty/mazpenlogo.png")
 }
 .logo.logo-light {
     background-image: url("../img/sprites/angularup-light.png")
@@ -3085,8 +3085,8 @@ nav li a:hover {
 .top-section-hero .jumbotron .logo {
     margin: 20px auto 0;
     background-size: 100% auto;
-    width: 450px;
-    height: 85px
+    width: 80px;
+    height: 120px
 }
 .top-section-hero .jumbotron p {
     font-size: 26px;
@@ -5386,8 +5386,8 @@ nav li a:hover {
         color: #03a9f4
     }
     .top-section-hero .jumbotron .logo {
-        width: 225px;
-        height: 42px
+        width: 80px;
+        height: 120px
     }
     .top-section-hero .jumbotron {
         margin: 0;
