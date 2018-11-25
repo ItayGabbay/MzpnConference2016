@@ -5,7 +5,7 @@ var bodyParser = require('body-parser')
 
 app.use(express.static(__dirname + '/public'));
 
-app.listen(4444, function() {
+app.listen(process.env.PORT, function() {
   console.log('listening');
 });
 
@@ -13,7 +13,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
   extended: true
 }));
-
+app.get('/', function(req, res, next) {
+  res.sendFile('index.html');
+})
 app.post('/signUp', function(req, res, next) {
   fs.appendFile('users.txt', req.body.name + "," + req.body.email + "," + req.body.phoneNumber + "," + req.body.unitName + '\n', function(err) {
     if (err) {
